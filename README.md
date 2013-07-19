@@ -1,4 +1,4 @@
 CallHijack
 ==========
 
-Hijack on-call event and inject something
+Hijack incoming call event and inject something
