@@ -9,6 +9,8 @@
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -24,6 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="com.polysfactory.callhijack.LayerService" >
+        </service>
 
         <receiver android:name="com.polysfactory.callhijack.IncomingBroadcastReceiver" >
             <intent-filter>

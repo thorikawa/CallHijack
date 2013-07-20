@@ -15,13 +15,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         try {
-            Log.d(L.TAG, "onCreate");
-
             /*
              * After this line, the code is not executed in Android 4.1 (Jelly
              * Bean) only
              */
-
             // TODO Auto-generated method stub
             super.onCreate(savedInstanceState);
 
@@ -29,11 +26,7 @@ public class MainActivity extends Activity {
             getWindow().addFlags(
                     WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL);
 
-            Log.d(L.TAG, "step1");
-
             setContentView(R.layout.activity_main);
-
-            Log.d(L.TAG, "step2");
 
             String number = getIntent().getStringExtra(
                     TelephonyManager.EXTRA_INCOMING_NUMBER);
